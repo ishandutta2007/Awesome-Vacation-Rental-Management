@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111c38" />
+      <stop offset="100%" stop-color="#0a1526" />
+    </linearGradient>
+
+    <!-- Vibrant Gradient for Title -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#f43f5e;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#f43f5e;#38bdf8;#818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#f43f5e">
+        <animate attributeName="stop-color" values="#f43f5e;#38bdf8;#818cf8;#f43f5e" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Accent Glow Gradient -->
+    <radialGradient id="glow1" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .pulse-slow {
+        animation: pulseAnim 6s ease-in-out infinite alternate;
+      }
+      .float-1 {
+        animation: floatAnim1 5s ease-in-out infinite alternate;
+      }
+      .float-2 {
+        animation: floatAnim2 7s ease-in-out infinite alternate;
+      }
+      .float-3 {
+        animation: floatAnim3 6s ease-in-out infinite alternate;
+      }
+      .badge-glow {
+        animation: badgePulse 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulseAnim {
+        0% { transform: scale(1); opacity: 0.7; }
+        100% { transform: scale(1.15); opacity: 1; }
+      }
+      @keyframes floatAnim1 {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-14px) rotate(3deg); }
+      }
+      @keyframes floatAnim2 {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-18px) rotate(-4deg); }
+      }
+      @keyframes floatAnim3 {
+        0% { transform: translateY(0px) scale(0.95); }
+        100% { transform: translateY(-10px) scale(1.05); }
+      }
+      @keyframes badgePulse {
+        0% { stroke: #38bdf8; filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.4)); }
+        100% { stroke: #f43f5e; filter: drop-shadow(0 0 8px rgba(244, 63, 94, 0.6)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Orbs -->
+  <circle cx="180" cy="90" r="160" fill="url(#glow1)" class="pulse-slow" />
+  <circle cx="1020" cy="260" r="180" fill="url(#glow2)" class="pulse-slow" />
+  <circle cx="600" cy="180" r="140" fill="url(#glow3)" />
+
+  <!-- Grid Overlay -->
+  <rect width="1200" height="360" rx="16" fill="url(#grid)" />
+
+  <!-- Decorative Wave / Tech Curves -->
+  <path d="M 0 290 Q 300 230, 600 290 T 1200 280 L 1200 360 L 0 360 Z" fill="rgba(56, 189, 248, 0.05)" />
+  <path d="M 0 315 Q 350 260, 700 315 T 1200 305 L 1200 360 L 0 360 Z" fill="rgba(99, 102, 241, 0.08)" />
+
+  <!-- Floating Tech & Hospitality Icons (SVG Shapes) -->
+  <!-- Left Side: Modern Villa / PMS Building -->
+  <g class="float-1" transform="translate(100, 110)">
+    <rect x="0" y="0" width="80" height="80" rx="20" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
+    <path d="M 40 22 L 20 38 L 26 38 L 26 58 L 54 58 L 54 38 L 60 38 Z" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M 34 58 L 34 44 L 46 44 L 46 58" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+    <circle cx="50" cy="32" r="2.5" fill="#f43f5e" />
+  </g>
+
+  <!-- Floating Element 2: Centralized Calendar Sync -->
+  <g class="float-2" transform="translate(1010, 85)">
+    <rect x="0" y="0" width="84" height="84" rx="20" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(244, 63, 94, 0.4)" stroke-width="1.5" />
+    <rect x="22" y="24" width="40" height="38" rx="6" fill="none" stroke="#f43f5e" stroke-width="2.5" />
+    <line x1="22" y1="36" x2="62" y2="36" stroke="#f43f5e" stroke-width="2" />
+    <line x1="32" y1="18" x2="32" y2="26" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="52" y1="18" x2="52" y2="26" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="34" cy="46" r="2" fill="#38bdf8" />
+    <circle cx="44" cy="46" r="2" fill="#38bdf8" />
+    <circle cx="54" cy="46" r="2" fill="#38bdf8" />
+    <circle cx="34" cy="54" r="2" fill="#818cf8" />
+    <circle cx="44" cy="54" r="2" fill="#818cf8" />
+  </g>
+
+  <!-- Floating Element 3: Smart Lock / IoT Automation -->
+  <g class="float-3" transform="translate(940, 210)">
+    <circle cx="32" cy="32" r="32" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(129, 140, 248, 0.3)" stroke-width="1.5" />
+    <path d="M 24 28 C 24 22 28 18 34 18 C 40 18 44 22 44 28 C 44 32 41 35 37 37 L 37 46 L 33 46 L 33 43 L 29 43 L 29 40 L 33 38 C 28 36 24 33 24 28 Z" fill="none" stroke="#818cf8" stroke-width="2" stroke-linejoin="round" />
+    <circle cx="34" cy="27" r="2.5" fill="#38bdf8" />
+  </g>
+
+  <!-- Floating Element 4: Direct Booking Engine -->
+  <g class="float-2" transform="translate(180, 220)">
+    <circle cx="28" cy="28" r="28" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5" />
+    <circle cx="28" cy="28" r="15" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <ellipse cx="28" cy="28" rx="15" ry="6" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="28" y1="13" x2="28" y2="43" stroke="#38bdf8" stroke-width="1.5" />
+  </g>
+
+  <!-- Main Center Header Content -->
+  <g transform="translate(425, 45)">
+    <rect x="0" y="0" width="350" height="34" rx="17" fill="rgba(255, 255, 255, 0.06)" stroke="#38bdf8" stroke-width="1.2" class="badge-glow" />
+    <circle cx="20" cy="17" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="36" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">CURATED ECOSYSTEM • 2026 EDITION</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="145" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5" filter="url(#dropGlow)">
+    Awesome Vacation Rental
+  </text>
+  <text x="600" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5" filter="url(#dropGlow)">
+    Management (VRM / PMS)
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="240" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400" fill="#94a3b8" letter-spacing="0.5">
+    The Definitive Directory of SaaS Platforms &amp; Open-Source Short-Term Rental Infrastructure
+  </text>
+
+  <!-- Category Tags Pill Bar -->
+  <g transform="translate(240, 275)">
+    <rect x="0" y="0" width="130" height="28" rx="14" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+    <text x="65" y="18" text-anchor="middle" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="600">🏠 PMS &amp; Booking</text>
+
+    <rect x="142" y="0" width="145" height="28" rx="14" fill="rgba(129, 140, 248, 0.12)" stroke="rgba(129, 140, 248, 0.3)" stroke-width="1" />
+    <text x="214" y="18" text-anchor="middle" fill="#a5b4fc" font-family="sans-serif" font-size="11" font-weight="600">🔄 Channel Managers</text>
+
+    <rect x="299" y="0" width="135" height="28" rx="14" fill="rgba(244, 63, 94, 0.12)" stroke="rgba(244, 63, 94, 0.3)" stroke-width="1" />
+    <text x="366" y="18" text-anchor="middle" fill="#fda4af" font-family="sans-serif" font-size="11" font-weight="600">⚡ Guest Automation</text>
+
+    <rect x="446" y="0" width="130" height="28" rx="14" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1" />
+    <text x="511" y="18" text-anchor="middle" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="600">🔑 Smart Locks &amp; IoT</text>
+
+    <rect x="588" y="0" width="132" height="28" rx="14" fill="rgba(234, 179, 8, 0.12)" stroke="rgba(234, 179, 8, 0.3)" stroke-width="1" />
+    <text x="654" y="18" text-anchor="middle" fill="#fde047" font-family="sans-serif" font-size="11" font-weight="600">🌐 Direct Bookings</text>
+  </g>
+
+  <!-- Bottom Accent Border Line with Animation -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#textGrad)" />
+</svg>
