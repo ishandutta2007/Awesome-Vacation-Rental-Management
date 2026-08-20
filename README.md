@@ -1,6 +1,6 @@
 # Awesome-Vacation-Rental-Management
 
-## Top Vacation Rental Management Ecosystem
+### Top Vacation Rental Management Ecosystem
 
 **Curated List of SaaS/Hosted Platforms & Open-Source GitHub Projects**  
 *Focused on Short-Term Rental Management, Property Management, Channel Management, Booking Automation, Guest Communication & Vacation Rental Operations*  
