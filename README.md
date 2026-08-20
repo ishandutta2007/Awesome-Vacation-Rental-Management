@@ -8,6 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Vacation-Rental-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Vacation-Rental-Management?style=social&color=white" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Vacation-Rental-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Vacation-Rental-Management/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -35,6 +36,7 @@
   - [💳 Hospitality Billing, Payments & Headless Commerce](#-hospitality-billing-payments--headless-commerce)
 - [🏗️ Open-Source Vacation Rental Architecture Stack](#️-open-source-vacation-rental-architecture-stack)
 - [🧠 Essential Vacation Rental Management Concepts](#-essential-vacation-rental-management-concepts)
+- [📈 Star History](#star-history)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [📜 License](#-license)
 
@@ -287,6 +289,11 @@ Contributions are welcome! If you would like to submit a new SaaS platform, open
 3. 📝 **Add your entry** with accurate pricing, free tier/trial limits, company scale, or star badges.
 4. 🚀 **Commit your changes**: `git commit -m "Add [Project Name] to directory"`
 5. 📬 **Submit a Pull Request**.
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Vacation-Rental-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Vacation-Rental-Management&type=date&legend=top-left)
 
 ---
 
